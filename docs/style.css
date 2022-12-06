@@ -1,0 +1,144 @@
+body{
+    background: url(images/Background-painting2.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;  
+}
+
+/*70% opacity background for aesthetic*/
+.transparent-background{
+    background-color: rgba(255,255,255,70%);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+}
+
+/*flexbox to correct position the canva inside the sheet of the background image*/
+.board{
+    background-image: url(images/Board.png);
+    background-size:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin:auto;
+    width:400px;       
+    height:1000px; 
+    display:flex;
+    justify-content: center; 
+}
+
+/*represents the sheet for painting*/
+.canva{
+    width:19rem;
+    height:24.9rem;
+    margin-top:105px;
+    margin-right:20px;
+    transform:rotate(0.3deg);
+}
+
+/*from now on comes all the colors filling up its container*/
+/*flexbox to position them*/
+/*blur and rotate to give it a realistic touch*/
+#yellow-back{
+    background-color: #FFD743;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius:2px;
+    border-top-left-radius:3px;
+    border-bottom-right-radius:3px;
+    border-bottom-left-radius:2px;
+}
+
+#ivory-back{
+    background-color: rgba(255, 255, 240, 95%);
+    width:95%;
+    height:95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius:15px;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:3px;
+    border-bottom-left-radius:2px;
+    filter:blur(1px);
+    transform:rotate(-0.2deg);
+}
+
+#yellow-back2{
+    background-color:#FFD743;
+    width:80%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    filter:blur(1px);
+    transform:rotate(-0.1deg);
+}
+
+#reds-top{
+    display: flex;
+    justify-content: center;
+    width:20rem;
+    height:10rem;
+    gap:15px;
+
+}
+
+#red1{
+    background-color:#DF362D;
+    width:1rem;
+    height:10rem;
+    border-top-right-radius:15px;
+    border-top-left-radius:3px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:10px;
+    transform:rotate(1deg);
+}
+
+#red2{
+    background-color:#AA1945;
+    width:14rem;
+    height:9.7rem;
+    margin-top:4px;
+    border-top-right-radius:6px;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:6px;
+    border-bottom-left-radius:4px;
+    transform:rotate(-0.5deg);
+}
+
+#red3{
+    background-color:#DF362D;
+    width:1rem;
+    height:9.3rem;
+    align-self: center;
+    border-top-right-radius:10px;
+    border-top-left-radius:3px;
+    border-bottom-right-radius:3px;
+    border-bottom-left-radius:10px;
+}
+
+#black-center{
+    background-color: black;
+    width:14.2rem;
+    height:1.4rem;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:8px;
+    transform:rotate(-0.2deg);
+}
+
+#amber-bottom{
+    background-color: #fba80f;
+    width:13.8rem;
+    height:4rem;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:10px;
+    transform:rotate(-0.2deg);
+}
